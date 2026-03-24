@@ -1,0 +1,99 @@
+import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../data/translations';
+
+const VillaGallery = () => {
+  const { language } = useLanguage();
+  const t = translations[language].villa;
+
+  const rooms = [
+    {
+      title: t.rooms.master.title,
+      description: t.rooms.master.description,
+      image:
+        'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=85'
+    },
+    {
+      title: t.rooms.suite2.title,
+      description: t.rooms.suite2.description,
+      image:
+        'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=85'
+    },
+    {
+      title: t.rooms.suite3.title,
+      description: t.rooms.suite3.description,
+      image:
+        'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=85'
+    },
+    {
+      title: t.rooms.suite4.title,
+      description: t.rooms.suite4.description,
+      image:
+        'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=85'
+    },
+    {
+      title: t.rooms.suite5.title,
+      description: t.rooms.suite5.description,
+      image:
+        'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&q=85'
+    },
+    {
+      title: t.rooms.bathroom.title,
+      description: t.rooms.bathroom.description,
+      image:
+        'https://images.unsplash.com/photo-1594398901394-4e34939a4fd0?w=800&q=85'
+    },
+    {
+      title: t.rooms.terrace.title,
+      description: t.rooms.terrace.description,
+      image:
+        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=85'
+    },
+    {
+      title: t.rooms.garden.title,
+      description: t.rooms.garden.description,
+      image: 'https://www.beachfrontvibe.com/wp-content/uploads/2025/08/privat.png'
+    }
+  ];
+
+  return (
+    <section id="villa" className="py-20 bg-gradient-to-b from-white to-slate-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            {t.title}
+          </h2>
+          <p className="text-xl text-gray-600">{t.subtitle}</p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {rooms.map((room, index) => (
+            <div
+              key={index}
+              className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+            >
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={room.image}
+                  alt={room.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-cyan-600 transition-colors">
+                  {room.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {room.description}
+                </p>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default VillaGallery;
