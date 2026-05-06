@@ -20,35 +20,35 @@ const ExperiencesSection = () => {
       title: t.parasailing.title,
       description: t.parasailing.description,
       image:
-        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/3euyvchb_WhatsApp%20Image%202026-05-04%20at%2017.54.28.jpeg'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/a1h0vhvx_WhatsApp%20Image%202026-05-04%20at%2017.54.43.jpeg'
     },
     {
       icon: Ship,
       title: t.catamaran.title,
       description: t.catamaran.description,
       image:
-        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/hbg6sdku_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/3j6vo5e4_WhatsApp%20Image%202026-05-04%20at%2017.54.31.jpeg'
     },
     {
       icon: Trophy,
       title: t.golf.title,
       description: t.golf.description,
       image:
-        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/zqsenjlv_WhatsApp%20Image%202026-05-04%20at%2017.54.30.jpeg'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/solunymy_WhatsApp%20Image%202026-05-04%20at%2017.54.42.jpeg'
     },
     {
       icon: Bike,
       title: t.cycling.title,
       description: t.cycling.description,
       image:
-        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/solunymy_WhatsApp%20Image%202026-05-04%20at%2017.54.42.jpeg'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/uk1ghx3o_WhatsApp%20Image%202026-05-04%20at%2017.54.29.jpeg'
     },
     {
       icon: ShoppingBag,
       title: t.markets.title,
       description: t.markets.description,
       image:
-        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/4lq29sa7_WhatsApp%20Image%202026-05-04%20at%2017.54.44.jpeg'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/3euyvchb_WhatsApp%20Image%202026-05-04%20at%2017.54.28.jpeg'
     },
     {
       icon: UtensilsCrossed,
