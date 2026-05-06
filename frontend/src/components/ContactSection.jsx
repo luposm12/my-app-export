@@ -72,19 +72,11 @@ const ContactSection = () => {
 
             <div className="space-y-4">
               <Button
-                onClick={handleCallClick}
-                className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
-              >
-                <Phone className="w-5 h-5" />
-                <span>{t.phone}</span>
-              </Button>
-
-              <Button
                 onClick={handleWhatsAppClick}
                 className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -98,7 +90,7 @@ const ContactSection = () => {
                   +34 630 733 619
                 </p>
                 <p className="text-sm text-gray-600 mt-1">
-                  {language === 'en' ? 'Available 9am - 9pm CET' : 'Disponible 9h - 21h CET'}
+                  {language === 'en' ? 'Contact via WhatsApp - Available 9am - 9pm CET' : 'Contactar por WhatsApp - Disponible 9h - 21h CET'}
                 </p>
               </div>
             </div>

@@ -133,7 +133,7 @@ export const translations = {
     booking: {
       title: 'Ready to Experience BeachfrontVibe?',
       subtitle: 'Book your Mediterranean escape today',
-      phone: 'Call or WhatsApp',
+      whatsapp: 'WhatsApp',
       availability: 'Check Availability',
       direct: 'Direct Booking Benefits',
       benefit1: 'Best price guarantee - no platform fees',
@@ -293,7 +293,7 @@ export const translations = {
     booking: {
       title: '¿Listo para Experimentar BeachfrontVibe?',
       subtitle: 'Reserva tu escapada mediterránea hoy',
-      phone: 'Llamar o WhatsApp',
+      whatsapp: 'WhatsApp',
       availability: 'Consultar Disponibilidad',
       direct: 'Beneficios de Reserva Directa',
       benefit1: 'Mejor precio garantizado - sin comisiones',
