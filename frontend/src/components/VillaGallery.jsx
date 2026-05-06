@@ -11,37 +11,25 @@ const VillaGallery = () => {
       title: t.rooms.master.title,
       description: t.rooms.master.description,
       image:
-        'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=85'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/7eh3auer_WhatsApp%20Image%202026-05-04%20at%2017.54.41.jpeg'
     },
     {
       title: t.rooms.suite2.title,
       description: t.rooms.suite2.description,
       image:
-        'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=85'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/7eh3auer_WhatsApp%20Image%202026-05-04%20at%2017.54.41.jpeg'
     },
     {
       title: t.rooms.suite3.title,
       description: t.rooms.suite3.description,
       image:
-        'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=85'
-    },
-    {
-      title: t.rooms.suite4.title,
-      description: t.rooms.suite4.description,
-      image:
-        'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=85'
-    },
-    {
-      title: t.rooms.suite5.title,
-      description: t.rooms.suite5.description,
-      image:
-        'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&q=85'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/solunymy_WhatsApp%20Image%202026-05-04%20at%2017.54.42.jpeg'
     },
     {
       title: t.rooms.bathroom.title,
       description: t.rooms.bathroom.description,
       image:
-        'https://images.unsplash.com/photo-1594398901394-4e34939a4fd0?w=800&q=85'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/qf5shs5n_WhatsApp%20Image%202026-05-04%20at%2017.54.43%20%281%29.jpeg'
     },
     {
       title: t.rooms.terrace.title,
@@ -52,7 +40,7 @@ const VillaGallery = () => {
     {
       title: t.rooms.garden.title,
       description: t.rooms.garden.description,
-      image: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/hbg6sdku_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/a1h0vhvx_WhatsApp%20Image%202026-05-04%20at%2017.54.43.jpeg'
     }
   ];
 

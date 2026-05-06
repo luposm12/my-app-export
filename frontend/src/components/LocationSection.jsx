@@ -70,7 +70,7 @@ const LocationSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://www.beachfrontvibe.com/wp-content/uploads/2025/08/Maps.webp"
+              src="https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/uk1ghx3o_WhatsApp%20Image%202026-05-04%20at%2017.54.29.jpeg"
               alt="Location map"
               className="w-full h-full object-cover"
             />
