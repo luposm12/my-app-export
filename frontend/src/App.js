@@ -7,6 +7,7 @@ import StatsBar from './components/StatsBar';
 import IntroSection from './components/IntroSection';
 import VillaGallery from './components/VillaGallery';
 import LocationSection from './components/LocationSection';
+import ImageGallery from './components/ImageGallery';
 import ExperiencesSection from './components/ExperiencesSection';
 import Testimonials from './components/Testimonials';
 import ContactSection from './components/ContactSection';
@@ -23,6 +24,7 @@ function App() {
         <IntroSection />
         <VillaGallery />
         <LocationSection />
+        <ImageGallery />
         <ExperiencesSection />
         <Testimonials />
         <ContactSection />

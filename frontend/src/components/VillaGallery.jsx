@@ -35,12 +35,12 @@ const VillaGallery = () => {
       title: t.rooms.terrace.title,
       description: t.rooms.terrace.description,
       image:
-        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/zpczayc2_WhatsApp%20Image%202026-05-04%20at%2017.54.39.jpeg'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/azpw7cf0_WhatsApp%20Image%202026-05-04%20at%2017.54.26.jpeg'
     },
     {
       title: t.rooms.garden.title,
       description: t.rooms.garden.description,
-      image: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/uxk0uoh3_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/hbg6sdku_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg'
     }
   ];
 
