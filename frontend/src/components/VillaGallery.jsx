@@ -14,14 +14,14 @@ const VillaGallery = () => {
         'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/7eh3auer_WhatsApp%20Image%202026-05-04%20at%2017.54.41.jpeg'
     },
     {
-      title: t.rooms.suite2.title,
-      description: t.rooms.suite2.description,
+      title: t.rooms.livingroom.title,
+      description: t.rooms.livingroom.description,
       image:
         'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/qoomevct_WhatsApp%20Image%202026-05-04%20at%2017.54.36.jpeg'
     },
     {
-      title: t.rooms.suite3.title,
-      description: t.rooms.suite3.description,
+      title: t.rooms.diningkitchen.title,
+      description: t.rooms.diningkitchen.description,
       image:
         'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/ddj77k9k_WhatsApp%20Image%202026-05-04%20at%2017.54.34.jpeg'
     },
@@ -40,7 +40,7 @@ const VillaGallery = () => {
     {
       title: t.rooms.garden.title,
       description: t.rooms.garden.description,
-      image: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/hbg6sdku_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/uxk0uoh3_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg'
     }
   ];
 

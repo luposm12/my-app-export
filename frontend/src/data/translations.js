@@ -38,21 +38,13 @@ export const translations = {
           title: 'Sun-Drenched Master Suite',
           description: 'Wake up to Mediterranean sunshine in this spacious retreat with premium bedding and serene views.'
         },
-        suite2: {
-          title: 'Coastal Breeze Bedroom',
-          description: 'Light-filled second bedroom with elegant furnishings and peaceful ambiance for restful nights.'
+        livingroom: {
+          title: 'Modern Living Space',
+          description: 'Bright and airy living room with comfortable seating, entertainment center, and elegant staircase design.'
         },
-        suite3: {
-          title: 'Garden View Haven',
-          description: 'Overlook your private garden from this tranquil bedroom, designed for ultimate relaxation.'
-        },
-        suite4: {
-          title: 'Family Comfort Room',
-          description: 'Versatile bedroom perfect for children or additional guests, with thoughtful design touches.'
-        },
-        suite5: {
-          title: 'Sunset Sanctuary',
-          description: 'Fifth bedroom capturing golden hour light, offering privacy and comfort for your group.'
+        diningkitchen: {
+          title: 'Open-Plan Dining & Kitchen',
+          description: 'Spacious dining area flowing into a fully-equipped modern kitchen, perfect for family meals and gatherings.'
         },
         bathroom: {
           title: 'Spa-Like Bathrooms',
@@ -206,21 +198,13 @@ export const translations = {
           title: 'Suite Principal Bañada por el Sol',
           description: 'Despierta con el sol mediterráneo en este espacioso refugio con ropa de cama premium y vistas serenas.'
         },
-        suite2: {
-          title: 'Dormitorio Brisa Costera',
-          description: 'Segundo dormitorio lleno de luz con muebles elegantes y ambiente tranquilo para noches de descanso.'
+        livingroom: {
+          title: 'Sala de Estar Moderna',
+          description: 'Sala de estar luminosa y espaciosa con asientos cómodos, centro de entretenimiento y elegante diseño de escalera.'
         },
-        suite3: {
-          title: 'Refugio con Vista al Jardín',
-          description: 'Con vistas a tu jardín privado desde este dormitorio tranquilo, diseñado para la relajación máxima.'
-        },
-        suite4: {
-          title: 'Habitación Confort Familiar',
-          description: 'Dormitorio versátil perfecto para niños o huéspedes adicionales, con toques de diseño cuidadosos.'
-        },
-        suite5: {
-          title: 'Santuario del Atardecer',
-          description: 'Quinto dormitorio que captura la luz dorada, ofreciendo privacidad y confort para tu grupo.'
+        diningkitchen: {
+          title: 'Comedor y Cocina de Planta Abierta',
+          description: 'Amplio comedor que fluye hacia una cocina moderna totalmente equipada, perfecta para comidas familiares y reuniones.'
         },
         bathroom: {
           title: 'Baños Tipo Spa',
