@@ -47,12 +47,12 @@ const VillaGallery = () => {
       title: t.rooms.terrace.title,
       description: t.rooms.terrace.description,
       image:
-        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=85'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/nwam3qrk_WhatsApp%20Image%202026-05-04%20at%2017.54.26.jpeg'
     },
     {
       title: t.rooms.garden.title,
       description: t.rooms.garden.description,
-      image: 'https://www.beachfrontvibe.com/wp-content/uploads/2025/08/privat.png'
+      image: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/hbg6sdku_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg'
     }
   ];
 

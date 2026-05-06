@@ -11,10 +11,10 @@ const Hero = () => {
   const t = translations[language].hero;
 
   const images = [
-    'https://www.beachfrontvibe.com/wp-content/uploads/2025/08/Foto-1024x977.png',
-    'https://www.beachfrontvibe.com/wp-content/uploads/2025/08/privat.png',
-    'https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=1920&q=90',
-    'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&q=90'
+    'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/uk1ghx3o_WhatsApp%20Image%202026-05-04%20at%2017.54.29.jpeg',
+    'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/nwam3qrk_WhatsApp%20Image%202026-05-04%20at%2017.54.26.jpeg',
+    'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/3euyvchb_WhatsApp%20Image%202026-05-04%20at%2017.54.28.jpeg',
+    'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/hbg6sdku_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg'
   ];
 
   useEffect(() => {
