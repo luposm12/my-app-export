@@ -151,9 +151,9 @@ const LocationSection = () => {
                     <p className="text-sm leading-relaxed mb-2">{item.info}</p>
                     {item.hasImage && (
                       <img 
-                        src="https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/PLACEHOLDER_IMAGE.jpeg"
-                        alt="Infrastructure"
-                        className="w-full h-32 object-cover rounded-md mt-2"
+                        src="https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/i0r0myth_Screenshot_1_1686751232.webp"
+                        alt="Pilar de la Horadada town center"
+                        className="w-full h-40 object-cover rounded-md mt-3 border border-cyan-500/30"
                       />
                     )}
                     {item.links && (
