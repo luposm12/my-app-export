@@ -54,6 +54,16 @@ const ImageGallery = () => {
       category: 'outdoor'
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/yogk5jn2_WhatsApp%20Image%202026-05-08%20at%2019.11.25%20%281%29.jpeg',
+      title: language === 'en' ? 'Utility Patio with Laundry' : 'Patio de Servicio con Lavandería',
+      category: 'outdoor'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/9zdctj68_WhatsApp%20Image%202026-05-08%20at%2019.11.25.jpeg',
+      title: language === 'en' ? 'Patio Storage Area' : 'Área de Almacenamiento del Patio',
+      category: 'outdoor'
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/solunymy_WhatsApp%20Image%202026-05-04%20at%2017.54.42.jpeg',
       title: language === 'en' ? 'Balcony View' : 'Vista desde el Balcón',
       category: 'outdoor'

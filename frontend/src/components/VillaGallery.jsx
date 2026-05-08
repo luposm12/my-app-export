@@ -56,6 +56,11 @@ const VillaGallery = () => {
         'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/rvswka9d_WhatsApp%20Image%202026-05-06%20at%2015.23.55%20%281%29.jpeg'
     },
     {
+      title: t.rooms.utilitypatio.title,
+      description: t.rooms.utilitypatio.description,
+      image: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/yogk5jn2_WhatsApp%20Image%202026-05-08%20at%2019.11.25%20%281%29.jpeg'
+    },
+    {
       title: t.rooms.garden.title,
       description: t.rooms.garden.description,
       image: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/uxk0uoh3_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg'

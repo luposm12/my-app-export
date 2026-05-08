@@ -70,6 +70,10 @@ export const translations = {
           title: 'Upper Floor Terrace',
           description: 'Private rooftop terrace with wooden pergola, perfect for sunrise yoga or evening relaxation.'
         },
+        utilitypatio: {
+          title: 'Utility Patio with Laundry',
+          description: 'Practical outdoor patio with washing machine, storage, and water facilities - perfect for extended stays.'
+        },
         garden: {
           title: 'Private Garden Oasis',
           description: 'A rare luxury in coastal Alicante - your own private garden. Perfect for children to play, evening cocktails, or peaceful reading.'
@@ -245,6 +249,10 @@ export const translations = {
         upperterrace: {
           title: 'Terraza del Piso Superior',
           description: 'Terraza privada en la azotea con pérgola de madera, perfecta para yoga al amanecer o relajación vespertina.'
+        },
+        utilitypatio: {
+          title: 'Patio de Servicio con Lavandería',
+          description: 'Patio exterior práctico con lavadora, almacenamiento y servicios de agua - perfecto para estancias prolongadas.'
         },
         garden: {
           title: 'Oasis de Jardín Privado',
