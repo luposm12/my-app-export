@@ -19,16 +19,16 @@ export const translations = {
       beach: 'to Beach',
       interior: 'Interior',
       garden: 'Private Garden',
-      petFriendly: 'Pet Friendly'
+      parking: 'Car Parking'
     },
     intro: {
       rare: 'RARE FIND',
       title: 'An Authentic Beachside Villa for Large Groups',
-      description: 'While most local properties offer only 2-3 bedrooms, BeachfrontVibe stands apart as a spacious 5-bedroom sanctuary. Perfect for families, groups of friends, or multi-generational getaways seeking authentic Mediterranean luxury with modern comfort.',
+      description: 'While most local properties offer only 2-3 bedrooms, BeachfrontVibe stands apart as a spacious 5-bedroom, 3-bathroom sanctuary with private parking for 2 cars. Perfect for families, groups of friends, or multi-generational getaways seeking authentic Mediterranean luxury with modern comfort.',
       feature1: 'Sleeps up to 10 guests comfortably',
-      feature2: 'Private garden oasis with outdoor dining',
-      feature3: '200m walk to pristine Blue Flag beaches',
-      feature4: 'Modern amenities in a traditional setting'
+      feature2: 'Private garden, patio & parking for 2 cars',
+      feature3: '3 full bathrooms with modern fixtures',
+      feature4: '200m walk to pristine Blue Flag beaches'
     },
     villa: {
       title: 'The Vibe',
@@ -195,16 +195,16 @@ export const translations = {
       beach: 'a la Playa',
       interior: 'Interior',
       garden: 'Jardín Privado',
-      petFriendly: 'Admite Mascotas'
+      parking: 'Aparcamiento'
     },
     intro: {
       rare: 'HALLAZGO EXCEPCIONAL',
       title: 'Una Villa Auténtica Junto a la Playa para Grupos Grandes',
-      description: 'Mientras que la mayoría de propiedades locales ofrecen solo 2-3 dormitorios, BeachfrontVibe se distingue como un espacioso santuario de 5 dormitorios. Perfecto para familias, grupos de amigos o reuniones multigeneracionales que buscan lujo mediterráneo auténtico con comodidad moderna.',
+      description: 'Mientras que la mayoría de propiedades locales ofrecen solo 2-3 dormitorios, BeachfrontVibe se distingue como un espacioso santuario de 5 dormitorios y 3 baños con aparcamiento privado para 2 coches. Perfecto para familias, grupos de amigos o reuniones multigeneracionales que buscan lujo mediterráneo auténtico con comodidad moderna.',
       feature1: 'Capacidad para 10 huéspedes cómodamente',
-      feature2: 'Oasis de jardín privado con comedor exterior',
-      feature3: 'A 200m a pie de playas con Bandera Azul',
-      feature4: 'Comodidades modernas en entorno tradicional'
+      feature2: 'Jardín privado, patio y aparcamiento para 2 coches',
+      feature3: '3 baños completos con accesorios modernos',
+      feature4: 'A 200m a pie de playas con Bandera Azul'
     },
     villa: {
       title: 'La Experiencia',

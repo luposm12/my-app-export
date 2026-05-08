@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bed, Waves, Home, Trees, PawPrint } from 'lucide-react';
+import { Bed, Waves, Home, Trees, Car } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
 
@@ -12,7 +12,7 @@ const StatsBar = () => {
     { icon: Waves, value: '200m', label: t.beach },
     { icon: Home, value: '130m²', label: t.interior },
     { icon: Trees, value: '✓', label: t.garden },
-    { icon: PawPrint, value: '✓', label: t.petFriendly }
+    { icon: Car, value: '2', label: t.parking }
   ];
 
   return (
