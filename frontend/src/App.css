@@ -10,3 +10,14 @@ body {
   min-height: 100vh;
   position: relative;
 }
+
+/* Hide Emergent branding */
+[href*="emergent"],
+[class*="emergent"],
+[id*="emergent"],
+a[href*="emergentagent.com"]:not([href*="customer-assets"]) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
