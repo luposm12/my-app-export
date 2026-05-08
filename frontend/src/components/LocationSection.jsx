@@ -10,18 +10,66 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from './ui/tooltip';
 
 const LocationSection = () => {
   const { language } = useLanguage();
   const t = translations[language].location;
 
   const highlights = [
-    { icon: MapPin, label: t.blueFlag },
-    { icon: Sun, label: t.climate },
-    { icon: Trees, label: t.reserves },
-    { icon: Trophy, label: t.golf },
-    { icon: Building, label: t.infrastructure },
-    { icon: Plane, label: t.airports }
+    { 
+      icon: MapPin, 
+      label: t.blueFlag,
+      info: language === 'en' 
+        ? 'Pristine beaches with excellent water quality, safety, and environmental standards'
+        : 'Playas vírgenes con excelente calidad del agua, seguridad y estándares ambientales',
+      link: 'https://www.blueflag.global/'
+    },
+    { 
+      icon: Sun, 
+      label: t.climate,
+      info: language === 'en'
+        ? '300+ days of sunshine per year, average 18°C, perfect year-round destination'
+        : 'Más de 300 días de sol al año, promedio 18°C, destino perfecto todo el año',
+      link: 'https://en.wikipedia.org/wiki/Mediterranean_climate'
+    },
+    { 
+      icon: Trees, 
+      label: t.reserves,
+      info: language === 'en'
+        ? 'Protected natural areas with unique flora and fauna, hiking trails, and scenic views'
+        : 'Áreas naturales protegidas con flora y fauna única, senderos y vistas panorámicas',
+      link: 'https://www.spain.info/en/destination/pilar-horadada/'
+    },
+    { 
+      icon: Trophy, 
+      label: t.golf,
+      info: language === 'en'
+        ? 'World-class golf courses including La Finca, Las Colinas, and Villamartin within 20 minutes'
+        : 'Campos de golf de clase mundial incluyendo La Finca, Las Colinas y Villamartin a 20 minutos',
+      link: 'https://www.golfcourseguide.org/courses/spain/costa-blanca'
+    },
+    { 
+      icon: Building, 
+      label: t.infrastructure,
+      info: language === 'en'
+        ? 'Modern amenities: supermarkets, pharmacies, medical centers, restaurants, and shops nearby'
+        : 'Servicios modernos: supermercados, farmacias, centros médicos, restaurantes y tiendas cerca',
+      link: 'https://www.pilardelahoradada.org/'
+    },
+    { 
+      icon: Plane, 
+      label: t.airports,
+      info: language === 'en'
+        ? 'Alicante Airport: 45 min | Murcia Airport: 35 min | Direct flights from major European cities'
+        : 'Aeropuerto Alicante: 45 min | Aeropuerto Murcia: 35 min | Vuelos directos desde principales ciudades europeas',
+      link: 'https://www.aena.es/en/alicante-elche.html'
+    }
   ];
 
   const walkingDistances = [
@@ -47,24 +95,41 @@ const LocationSection = () => {
         </div>
 
         {/* Location Highlights */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
-          {highlights.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center text-center p-4 bg-gradient-to-b from-cyan-50 to-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105"
-              >
-                <div className="mb-3 p-3 bg-white rounded-full shadow-md">
-                  <Icon className="w-6 h-6 text-cyan-600" />
-                </div>
-                <p className="text-sm text-gray-700 font-medium">
-                  {item.label}
-                </p>
-              </div>
-            );
-          })}
-        </div>
+        <TooltipProvider>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
+            {highlights.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <Tooltip key={index} delayDuration={200}>
+                  <TooltipTrigger asChild>
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center text-center p-4 bg-gradient-to-b from-cyan-50 to-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
+                    >
+                      <div className="mb-3 p-3 bg-white rounded-full shadow-md group-hover:shadow-xl transition-all duration-300">
+                        <Icon className="w-6 h-6 text-cyan-600" />
+                      </div>
+                      <p className="text-sm text-gray-700 font-medium">
+                        {item.label}
+                      </p>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent 
+                    side="bottom" 
+                    className="max-w-xs bg-slate-900 text-white p-4 rounded-lg shadow-2xl"
+                  >
+                    <p className="text-sm leading-relaxed">{item.info}</p>
+                    <p className="text-xs text-cyan-400 mt-2">
+                      {language === 'en' ? 'Click to learn more →' : 'Clic para saber más →'}
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
+              );
+            })}
+          </div>
+        </TooltipProvider>
 
         {/* Map and Walking Distances */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
