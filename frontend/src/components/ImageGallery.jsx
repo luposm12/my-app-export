@@ -24,11 +24,6 @@ const ImageGallery = () => {
       category: 'garden'
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/azpw7cf0_WhatsApp%20Image%202026-05-04%20at%2017.54.26.jpeg',
-      title: language === 'en' ? 'Garden Terrace with Entrance' : 'Terraza del Jardín con Entrada',
-      category: 'garden'
-    },
-    {
       url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/nwam3qrk_WhatsApp%20Image%202026-05-04%20at%2017.54.26.jpeg',
       title: language === 'en' ? 'Outdoor Dining Area with BBQ' : 'Zona de Comedor Exterior con Barbacoa',
       category: 'garden'
@@ -51,11 +46,6 @@ const ImageGallery = () => {
     {
       url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/uxk0uoh3_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg',
       title: language === 'en' ? 'Garden Bench with Grape Vines' : 'Banco de Jardín con Vides',
-      category: 'garden'
-    },
-    {
-      url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/hbg6sdku_WhatsApp%20Image%202026-05-04%20at%2017.54.31%20%281%29.jpeg',
-      title: language === 'en' ? 'Garden Seating Area' : 'Zona de Estar en el Jardín',
       category: 'garden'
     },
     {
