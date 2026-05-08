@@ -117,8 +117,8 @@ const ContactSection = () => {
             <div className="mt-8 p-4 bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl">
               <p className="text-sm text-gray-700 italic">
                 {language === 'en'
-                  ? '"Booking directly with BeachfrontVibe was seamless. The owner provided amazing local tips and we saved money compared to booking platforms!" - Recent Guest'
-                  : '"Reservar directamente con BeachfrontVibe fue fácil. ¡El propietario nos dio consejos locales increíbles y ahorramos dinero en comparación con las plataformas de reserva!" - Huésped Reciente'}
+                  ? '"Booking directly with The Shoreline Suite was seamless. The owner provided amazing local tips and we saved money compared to booking platforms!" - Recent Guest'
+                  : '"Reservar directamente con The Shoreline Suite fue fácil. ¡El propietario nos dio consejos locales increíbles y ahorramos dinero en comparación con las plataformas de reserva!" - Huésped Reciente'}
               </p>
             </div>
           </div>

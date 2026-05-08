@@ -15,7 +15,7 @@ const Footer = () => {
           {/* About */}
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-4">
-              BeachfrontVibe
+              The Shoreline Suite
             </h3>
             <p className="text-gray-400 leading-relaxed">{t.aboutText}</p>
           </div>

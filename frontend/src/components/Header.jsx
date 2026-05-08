@@ -51,7 +51,7 @@ const Header = () => {
               onClick={() => scrollToSection('hero')}
             >
               <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-600 via-blue-600 to-cyan-700 bg-clip-text text-transparent">
-                BeachfrontVibe
+                The Shoreline Suite
               </h1>
               <p className="text-xs text-gray-600 tracking-wider">
                 PILAR DE LA HORADADA
