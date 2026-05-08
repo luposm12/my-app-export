@@ -34,8 +34,8 @@ const LocationSection = () => {
       icon: Sun, 
       label: t.climate,
       info: language === 'en'
-        ? '300+ days of sunshine per year, average 18°C, perfect year-round destination'
-        : 'Más de 300 días de sol al año, promedio 18°C, destino perfecto todo el año',
+        ? '300+ days of sunshine per year, average 18°C year-round, 30°C in summer - perfect destination in any season'
+        : 'Más de 300 días de sol al año, promedio 18°C anual, 30°C en verano - destino perfecto en cualquier temporada',
       link: null
     },
     { 
