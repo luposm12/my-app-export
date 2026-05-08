@@ -38,6 +38,18 @@ export const translations = {
           title: 'Sun-Drenched Master Suite',
           description: 'Wake up to Mediterranean sunshine in this spacious retreat with premium bedding and serene views.'
         },
+        bedroom2: {
+          title: 'Bright Garden View Bedroom',
+          description: 'Light-filled bedroom with large windows overlooking the garden, perfect for peaceful mornings.'
+        },
+        bedroom3: {
+          title: 'Elegant Bedroom with French Doors',
+          description: 'Beautiful bedroom featuring three arched French doors opening to garden views and natural Mediterranean light.'
+        },
+        bedroom4: {
+          title: 'Cozy Upper Floor Bedroom',
+          description: 'Comfortable bedroom with staircase access, ideal for families or groups seeking privacy.'
+        },
         livingroom: {
           title: 'Modern Living Space',
           description: 'Bright and airy living room with comfortable seating, entertainment center, and elegant staircase design.'
@@ -53,6 +65,10 @@ export const translations = {
         terrace: {
           title: 'Alfresco Dining Terrace',
           description: 'Your outdoor living room. Dine under the stars, sip morning coffee, or simply bask in the Spanish sun.'
+        },
+        upperterrace: {
+          title: 'Upper Floor Terrace',
+          description: 'Private rooftop terrace with wooden pergola, perfect for sunrise yoga or evening relaxation.'
         },
         garden: {
           title: 'Private Garden Oasis',
@@ -198,6 +214,18 @@ export const translations = {
           title: 'Suite Principal Bañada por el Sol',
           description: 'Despierta con el sol mediterráneo en este espacioso refugio con ropa de cama premium y vistas serenas.'
         },
+        bedroom2: {
+          title: 'Dormitorio Luminoso con Vista al Jardín',
+          description: 'Dormitorio lleno de luz con grandes ventanas con vista al jardín, perfecto para mañanas tranquilas.'
+        },
+        bedroom3: {
+          title: 'Elegante Dormitorio con Puertas Francesas',
+          description: 'Hermoso dormitorio con tres puertas francesas arqueadas que se abren a vistas del jardín y luz mediterránea natural.'
+        },
+        bedroom4: {
+          title: 'Acogedor Dormitorio del Piso Superior',
+          description: 'Cómodo dormitorio con acceso por escalera, ideal para familias o grupos que buscan privacidad.'
+        },
         livingroom: {
           title: 'Sala de Estar Moderna',
           description: 'Sala de estar luminosa y espaciosa con asientos cómodos, centro de entretenimiento y elegante diseño de escalera.'
@@ -213,6 +241,10 @@ export const translations = {
         terrace: {
           title: 'Terraza Comedor Al Aire Libre',
           description: 'Tu sala de estar exterior. Cena bajo las estrellas, toma café por la mañana o simplemente disfruta del sol español.'
+        },
+        upperterrace: {
+          title: 'Terraza del Piso Superior',
+          description: 'Terraza privada en la azotea con pérgola de madera, perfecta para yoga al amanecer o relajación vespertina.'
         },
         garden: {
           title: 'Oasis de Jardín Privado',

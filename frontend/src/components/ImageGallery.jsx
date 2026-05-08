@@ -49,6 +49,11 @@ const ImageGallery = () => {
       category: 'garden'
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/rvswka9d_WhatsApp%20Image%202026-05-06%20at%2015.23.55%20%281%29.jpeg',
+      title: language === 'en' ? 'Upper Floor Terrace with Pergola' : 'Terraza del Piso Superior con Pérgola',
+      category: 'outdoor'
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/solunymy_WhatsApp%20Image%202026-05-04%20at%2017.54.42.jpeg',
       title: language === 'en' ? 'Balcony View' : 'Vista desde el Balcón',
       category: 'outdoor'
@@ -74,8 +79,28 @@ const ImageGallery = () => {
       category: 'bedroom'
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/rqvyaxad_WhatsApp%20Image%202026-05-06%20at%2015.23.58.jpeg',
+      title: language === 'en' ? 'Bright Bedroom with Garden Views' : 'Dormitorio Luminoso con Vistas al Jardín',
+      category: 'bedroom'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/gdi694d7_WhatsApp%20Image%202026-05-06%20at%2015.23.57%20%281%29.jpeg',
+      title: language === 'en' ? 'Bedroom with Staircase Access' : 'Dormitorio con Acceso a Escalera',
+      category: 'bedroom'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/cuc2fsw5_WhatsApp%20Image%202026-05-06%20at%2015.23.55.jpeg',
+      title: language === 'en' ? 'Bedroom with Arched French Doors' : 'Dormitorio con Puertas Arqueadas',
+      category: 'bedroom'
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/qf5shs5n_WhatsApp%20Image%202026-05-04%20at%2017.54.43%20%281%29.jpeg',
       title: language === 'en' ? 'Spa Bathroom with Jacuzzi' : 'Baño Spa con Jacuzzi',
+      category: 'bathroom'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/xo1zazbh_WhatsApp%20Image%202026-05-06%20at%2015.23.57.jpeg',
+      title: language === 'en' ? 'Bathroom with Bathtub' : 'Baño con Bañera',
       category: 'bathroom'
     }
   ];

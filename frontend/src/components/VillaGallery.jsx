@@ -14,6 +14,24 @@ const VillaGallery = () => {
         'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/7eh3auer_WhatsApp%20Image%202026-05-04%20at%2017.54.41.jpeg'
     },
     {
+      title: t.rooms.bedroom2.title,
+      description: t.rooms.bedroom2.description,
+      image:
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/rqvyaxad_WhatsApp%20Image%202026-05-06%20at%2015.23.58.jpeg'
+    },
+    {
+      title: t.rooms.bedroom3.title,
+      description: t.rooms.bedroom3.description,
+      image:
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/cuc2fsw5_WhatsApp%20Image%202026-05-06%20at%2015.23.55.jpeg'
+    },
+    {
+      title: t.rooms.bedroom4.title,
+      description: t.rooms.bedroom4.description,
+      image:
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/gdi694d7_WhatsApp%20Image%202026-05-06%20at%2015.23.57%20%281%29.jpeg'
+    },
+    {
       title: t.rooms.livingroom.title,
       description: t.rooms.livingroom.description,
       image:
@@ -32,10 +50,10 @@ const VillaGallery = () => {
         'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/qf5shs5n_WhatsApp%20Image%202026-05-04%20at%2017.54.43%20%281%29.jpeg'
     },
     {
-      title: t.rooms.terrace.title,
-      description: t.rooms.terrace.description,
+      title: t.rooms.upperterrace.title,
+      description: t.rooms.upperterrace.description,
       image:
-        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/azpw7cf0_WhatsApp%20Image%202026-05-04%20at%2017.54.26.jpeg'
+        'https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/rvswka9d_WhatsApp%20Image%202026-05-06%20at%2015.23.55%20%281%29.jpeg'
     },
     {
       title: t.rooms.garden.title,
