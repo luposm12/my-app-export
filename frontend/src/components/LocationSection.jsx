@@ -130,18 +130,6 @@ const LocationSection = () => {
           </p>
         </div>
 
-        {/* Mobile Hint - Only visible on mobile when section is in view */}
-        {showMobileHint && (
-          <div className="lg:hidden sticky top-20 z-30 mb-6 animate-in slide-in-from-top duration-300">
-            <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-3 rounded-lg shadow-lg flex items-center justify-center space-x-2">
-              <Info className="w-5 h-5 animate-pulse" />
-              <span className="text-sm font-medium">
-                {language === 'en' ? 'Tap boxes to read more' : 'Toca las cajas para leer más'}
-              </span>
-            </div>
-          </div>
-        )}
-
         {/* Location Highlights */}
         <TooltipProvider>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
