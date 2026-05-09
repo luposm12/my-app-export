@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   MapPin,
   Sun,
@@ -6,7 +6,8 @@ import {
   Trophy,
   Building,
   Plane,
-  Navigation
+  Navigation,
+  Info
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
@@ -20,6 +21,9 @@ import {
 const LocationSection = () => {
   const { language } = useLanguage();
   const t = translations[language].location;
+  const [showMobileHint, setShowMobileHint] = useState(false);
+  const sectionRef = useRef(null);
+  const [openTooltipIndex, setOpenTooltipIndex] = useState(null);
 
   const highlights = [
     { 
@@ -76,6 +80,34 @@ const LocationSection = () => {
     }
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setShowMobileHint(entry.isIntersecting);
+        });
+      },
+      {
+        threshold: 0.3,
+        rootMargin: '-100px 0px -100px 0px'
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  const handleMobileClick = (index) => {
+    setOpenTooltipIndex(openTooltipIndex === index ? null : index);
+  };
+
   const walkingDistances = [
     { place: t.beach, time: t.min3 },
     { place: t.restaurants, time: t.min5 },
@@ -84,7 +116,7 @@ const LocationSection = () => {
   ];
 
   return (
-    <section id="location" className="py-20 bg-white">
+    <section id="location" className="py-20 bg-white" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -98,19 +130,78 @@ const LocationSection = () => {
           </p>
         </div>
 
+        {/* Mobile Hint - Only visible on mobile when section is in view */}
+        {showMobileHint && (
+          <div className="lg:hidden sticky top-20 z-30 mb-6 animate-in slide-in-from-top duration-300">
+            <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-3 rounded-lg shadow-lg flex items-center justify-center space-x-2">
+              <Info className="w-5 h-5 animate-pulse" />
+              <span className="text-sm font-medium">
+                {language === 'en' ? 'Tap boxes to read more' : 'Toca las cajas para leer más'}
+              </span>
+            </div>
+          </div>
+        )}
+
         {/* Location Highlights */}
         <TooltipProvider>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
             {highlights.map((item, index) => {
               const Icon = item.icon;
               const hasLink = item.link || item.links;
+              const isMobileOpen = openTooltipIndex === index;
               
               return (
-                <Tooltip key={index} delayDuration={200}>
-                  <TooltipTrigger asChild>
-                    {hasLink ? (
-                      item.links ? (
-                        <div className="flex flex-col items-center text-center p-4 bg-gradient-to-b from-cyan-50 to-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer">
+                <div key={index} className="relative">
+                  <Tooltip open={isMobileOpen ? true : undefined} delayDuration={200}>
+                    <TooltipTrigger asChild>
+                      {hasLink ? (
+                        item.links ? (
+                          <div 
+                            onClick={() => handleMobileClick(index)}
+                            className="flex flex-col items-center text-center p-4 bg-gradient-to-b from-cyan-50 to-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer relative"
+                          >
+                            <div className="absolute top-2 right-2 lg:hidden">
+                              <Info className="w-4 h-4 text-cyan-600" />
+                            </div>
+                            <div className="mb-3 p-3 bg-white rounded-full shadow-md group-hover:shadow-xl transition-all duration-300">
+                              <Icon className="w-6 h-6 text-cyan-600" />
+                            </div>
+                            <p className="text-sm text-gray-700 font-medium">
+                              {item.label}
+                            </p>
+                          </div>
+                        ) : (
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => {
+                              if (window.innerWidth < 1024) {
+                                e.preventDefault();
+                                handleMobileClick(index);
+                              }
+                            }}
+                            className="flex flex-col items-center text-center p-4 bg-gradient-to-b from-cyan-50 to-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer relative"
+                          >
+                            <div className="absolute top-2 right-2 lg:hidden">
+                              <Info className="w-4 h-4 text-cyan-600" />
+                            </div>
+                            <div className="mb-3 p-3 bg-white rounded-full shadow-md group-hover:shadow-xl transition-all duration-300">
+                              <Icon className="w-6 h-6 text-cyan-600" />
+                            </div>
+                            <p className="text-sm text-gray-700 font-medium">
+                              {item.label}
+                            </p>
+                          </a>
+                        )
+                      ) : (
+                        <div 
+                          onClick={() => handleMobileClick(index)}
+                          className="flex flex-col items-center text-center p-4 bg-gradient-to-b from-cyan-50 to-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer relative"
+                        >
+                          <div className="absolute top-2 right-2 lg:hidden">
+                            <Info className="w-4 h-4 text-cyan-600" />
+                          </div>
                           <div className="mb-3 p-3 bg-white rounded-full shadow-md group-hover:shadow-xl transition-all duration-300">
                             <Icon className="w-6 h-6 text-cyan-600" />
                           </div>
@@ -118,66 +209,50 @@ const LocationSection = () => {
                             {item.label}
                           </p>
                         </div>
-                      ) : (
+                      )}
+                    </TooltipTrigger>
+                    <TooltipContent 
+                      side="bottom" 
+                      className="max-w-xs bg-slate-900 text-white p-4 rounded-lg shadow-2xl z-50"
+                    >
+                      <p className="text-sm leading-relaxed mb-2">{item.info}</p>
+                      {item.hasImage && (
+                        <img 
+                          src="https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/i0r0myth_Screenshot_1_1686751232.webp"
+                          alt="Pilar de la Horadada town center"
+                          className="w-full h-40 object-cover rounded-md mt-3 border border-cyan-500/30"
+                        />
+                      )}
+                      {item.links && (
+                        <div className="flex flex-col gap-2 mt-3">
+                          {item.links.map((link, idx) => (
+                            <a
+                              key={idx}
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-cyan-400 hover:text-cyan-300 underline"
+                              onClick={() => setOpenTooltipIndex(null)}
+                            >
+                              {link.name} →
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                      {item.link && (
                         <a
                           href={item.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex flex-col items-center text-center p-4 bg-gradient-to-b from-cyan-50 to-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
+                          className="text-xs text-cyan-400 mt-2 block hover:text-cyan-300"
+                          onClick={() => setOpenTooltipIndex(null)}
                         >
-                          <div className="mb-3 p-3 bg-white rounded-full shadow-md group-hover:shadow-xl transition-all duration-300">
-                            <Icon className="w-6 h-6 text-cyan-600" />
-                          </div>
-                          <p className="text-sm text-gray-700 font-medium">
-                            {item.label}
-                          </p>
+                          {language === 'en' ? 'Click to learn more →' : 'Clic para saber más →'}
                         </a>
-                      )
-                    ) : (
-                      <div className="flex flex-col items-center text-center p-4 bg-gradient-to-b from-cyan-50 to-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer">
-                        <div className="mb-3 p-3 bg-white rounded-full shadow-md group-hover:shadow-xl transition-all duration-300">
-                          <Icon className="w-6 h-6 text-cyan-600" />
-                        </div>
-                        <p className="text-sm text-gray-700 font-medium">
-                          {item.label}
-                        </p>
-                      </div>
-                    )}
-                  </TooltipTrigger>
-                  <TooltipContent 
-                    side="bottom" 
-                    className="max-w-xs bg-slate-900 text-white p-4 rounded-lg shadow-2xl"
-                  >
-                    <p className="text-sm leading-relaxed mb-2">{item.info}</p>
-                    {item.hasImage && (
-                      <img 
-                        src="https://customer-assets.emergentagent.com/job_mediterranean-escape-2/artifacts/i0r0myth_Screenshot_1_1686751232.webp"
-                        alt="Pilar de la Horadada town center"
-                        className="w-full h-40 object-cover rounded-md mt-3 border border-cyan-500/30"
-                      />
-                    )}
-                    {item.links && (
-                      <div className="flex flex-col gap-2 mt-3">
-                        {item.links.map((link, idx) => (
-                          <a
-                            key={idx}
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs text-cyan-400 hover:text-cyan-300 underline"
-                          >
-                            {link.name} →
-                          </a>
-                        ))}
-                      </div>
-                    )}
-                    {item.link && (
-                      <p className="text-xs text-cyan-400 mt-2">
-                        {language === 'en' ? 'Click to learn more →' : 'Clic para saber más →'}
-                      </p>
-                    )}
-                  </TooltipContent>
-                </Tooltip>
+                      )}
+                    </TooltipContent>
+                  </Tooltip>
+                </div>
               );
             })}
           </div>
