@@ -24,11 +24,11 @@ export const translations = {
     intro: {
       rare: 'RARE FIND',
       title: 'An Authentic Beachside Villa for Large Groups',
-      description: 'While most local properties offer only 2-3 bedrooms, The Shoreline Suite stands apart as a spacious 5-bedroom, 3-bathroom sanctuary with private parking for 2 cars. Located as one of the closest houses to the beachside in the residence, it\'s perfect for families, groups of friends, or multi-generational getaways seeking authentic Mediterranean luxury with modern comfort.',
+      description: 'While most local properties offer only 2-3 bedrooms, The Shoreline Suite stands apart as a spacious 5-bedroom, 3-bathroom sanctuary with private parking. Located as one of the closest houses to the beachside in the residence, it\'s perfect for families, groups of friends, or multi-generational getaways seeking authentic Mediterranean luxury with modern comfort.',
       feature1: 'One of the closest villas to the beach (200m)',
-      feature2: 'Private garden, patio & parking for 2 cars',
+      feature2: 'Private garden, patio & parking space',
       feature3: '3 full bathrooms with modern fixtures',
-      feature4: 'Sleeps up to 10 guests comfortably'
+      feature4: 'Sleeps up to 8 guests comfortably'
     },
     villa: {
       title: 'The Vibe',
@@ -204,11 +204,11 @@ export const translations = {
     intro: {
       rare: 'HALLAZGO EXCEPCIONAL',
       title: 'Una Villa Auténtica Junto a la Playa para Grupos Grandes',
-      description: 'Mientras que la mayoría de propiedades locales ofrecen solo 2-3 dormitorios, The Shoreline Suite se distingue como un espacioso santuario de 5 dormitorios y 3 baños con aparcamiento privado para 2 coches. Ubicada como una de las casas más cercanas a la playa en la residencia, es perfecta para familias, grupos de amigos o reuniones multigeneracionales que buscan lujo mediterráneo auténtico con comodidad moderna.',
+      description: 'Mientras que la mayoría de propiedades locales ofrecen solo 2-3 dormitorios, The Shoreline Suite se distingue como un espacioso santuario de 5 dormitorios y 3 baños con aparcamiento privado. Ubicada como una de las casas más cercanas a la playa en la residencia, es perfecta para familias, grupos de amigos o reuniones multigeneracionales que buscan lujo mediterráneo auténtico con comodidad moderna.',
       feature1: 'Una de las villas más cercanas a la playa (200m)',
-      feature2: 'Jardín privado, patio y aparcamiento para 2 coches',
+      feature2: 'Jardín privado, patio y aparcamiento',
       feature3: '3 baños completos con accesorios modernos',
-      feature4: 'Capacidad para 10 huéspedes cómodamente'
+      feature4: 'Capacidad para 8 huéspedes cómodamente'
     },
     villa: {
       title: 'La Experiencia',

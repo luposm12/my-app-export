@@ -12,7 +12,7 @@ const StatsBar = () => {
     { icon: Waves, value: '200m', label: t.beach },
     { icon: Home, value: '130m²', label: t.interior },
     { icon: Trees, value: '✓', label: t.garden },
-    { icon: Car, value: '2', label: t.parking }
+    { icon: Car, value: '1', label: t.parking }
   ];
 
   return (
